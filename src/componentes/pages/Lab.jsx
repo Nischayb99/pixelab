@@ -4,13 +4,11 @@ import { IoColorFilterOutline } from "react-icons/io5";
 import { CgShapeHexagon } from "react-icons/cg";
 import { LuCopy } from "react-icons/lu";
 import { BsMagic } from "react-icons/bs";
-import {
-  TemplateTool,
-  TextTool,
-  ShapeTool,
-  CopyTool,
-  MagicTool,
-} from "../common/ToolPages";
+import TemplateTool from "../tools/TemplateTool";
+import TextTool from "../tools/TextTool";
+import ShapeTool from "../tools/ShapeTool";
+import CopyTool from "../tools/CopyTool";
+import MagicTool from "../tools/MagicTool";
 
 function Lab() {
   const [currentTool, setCurrentTool] = useState("template");
@@ -94,10 +92,10 @@ function Lab() {
 
           {/* Mobile Toolbar */}
           <div className="sm:hidden absolute bottom-0 left-0 right-0 h-30">
-            <div className="bg-red-500 h-20 animate-fadeIn flex items-center">
+            <div className="border-t-[1px] border-stone-600 h-20 animate-fadeIn flex items-center">
               {currentComponent}
             </div>
-            {renderButtons("mobile")}
+            <div className="border-t-[1px] border-blue-300">{renderButtons("mobile")}</div>
           </div>
         </div>
 

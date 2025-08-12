@@ -1,4 +1,4 @@
-export const TemplateTool = () => {
+function TemplateTool() {
   return (
     <div className="w-full h-[95%] bg-slate-500 flex items-center">
       {/* Mobile Template */}
@@ -9,7 +9,7 @@ export const TemplateTool = () => {
           msOverflowStyle: "none" /* Internet Explorer 10+ */,
         }}
       >
-        <style >{`
+        <style>{`
           div::-webkit-scrollbar {
             display: none; /* Safari and Chrome */
           }
@@ -79,34 +79,4 @@ export const TemplateTool = () => {
   );
 };
 
-export const TextTool = () => {
-  return (
-    <div className="w-full h-[95%] bg-slate-500">
-      <div className="h-[400px] w-[400px] bg-slate-400">Text1</div>
-    </div>
-  );
-};
-
-export const ShapeTool = () => {
-  return (
-    <div className="w-full h-[95%] bg-slate-500">
-      <div className="h-[400px] w-[400px] bg-slate-400">Shape1</div>
-    </div>
-  );
-};
-
-export const CopyTool = () => {
-  return (
-    <div className="w-full h-[95%] bg-slate-500">
-      <div className="h-[400px] w-[400px] bg-slate-400">Copy1</div>
-    </div>
-  );
-};
-
-export const MagicTool = () => {
-  return (
-    <div className="w-full h-[95%] bg-slate-500">
-      <div className="h-[400px] w-[400px] bg-slate-400">Magic1</div>
-    </div>
-  );
-};
+export default TemplateTool;
