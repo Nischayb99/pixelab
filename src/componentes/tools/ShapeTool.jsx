@@ -49,33 +49,48 @@ function ShapeTool() {
       </div>
 
       {/* Desktop version (hidden on mobile) */}
-      <div className="hidden sm:flex items-center justify-center gap-2 flex-wrap">
-        <div className="h-[60px] w-[60px] bg-slate-400 flex items-center justify-center text-white font-semibold rounded">
-          Tem1
-        </div>
-        <div className="h-[60px] w-[60px] bg-slate-400 flex items-center justify-center text-white font-semibold rounded">
-          Tem2
-        </div>
-        <div className="h-[60px] w-[60px] bg-slate-400 flex items-center justify-center text-white font-semibold rounded">
-          Tem3
-        </div>
-        <div className="h-[60px] w-[60px] bg-slate-400 flex items-center justify-center text-white font-semibold rounded">
-          Tem4
-        </div>
-        <div className="h-[60px] w-[60px] bg-slate-400 flex items-center justify-center text-white font-semibold rounded">
-          Tem5
-        </div>
-        <div className="h-[60px] w-[60px] bg-slate-400 flex items-center justify-center text-white font-semibold rounded">
-          Tem6
-        </div>
-        <div className="h-[60px] w-[60px] bg-slate-400 flex items-center justify-center text-white font-semibold rounded">
-          Tem7
-        </div>
-        <div className="h-[60px] w-[60px] bg-slate-400 flex items-center justify-center text-white font-semibold rounded">
-          Tem8
-        </div>
-        <div className="h-[60px] w-[60px] bg-slate-400 flex items-center justify-center text-white font-semibold rounded">
-          Tem9
+      <div className="hidden sm:flex  w-full h-full">
+        <div className=" flex gap-2 h-full w-full  ">
+          <div className="w-[50%] h-full flex flex-col gap-7 items-center">
+            <div className="h-[60px] w-[60px] text-[#181818] font-semibold rounded flex items-center justify-center">
+              <button className="flex flex-col items-center justify-center">
+                <RiStarSmileFill className="text-5xl" />
+                <span>stickers</span>
+              </button>
+            </div>
+            <div className="h-[60px] w-[60px] text-[#181818] font-semibold rounded flex items-center justify-center">
+              <button className="flex flex-col items-center justify-center">
+                <GrGallery className="text-5xl" />
+                <span>import</span>
+              </button>
+            </div>
+            <div className="h-[60px] w-[60px] text-[#181818] font-semibold rounded flex items-center justify-center">
+              <button className="flex flex-col items-center justify-center">
+                <IoMdBrush className="text-5xl" />
+                <span>draw</span>
+              </button>
+            </div>
+          </div>
+          <div className="w-[50%] h-full flex flex-col gap-7 items-center">
+            <div className="h-[60px] w-[60px] text-[#181818] font-semibold rounded flex items-center justify-center">
+              <button className="flex flex-col items-center justify-center">
+                <PiShapesLight className="text-5xl" />
+                <span>shapes</span>
+              </button>
+            </div>
+            <div className="h-[60px] w-[60px] text-[#181818] font-semibold rounded flex items-center justify-center">
+              <button className="flex flex-col items-center justify-center">
+                <FaBezierCurve className="text-5xl" />
+                <span>bezier</span>
+              </button>
+            </div>
+            <div className="h-[60px] w-[60px] text-[#181818] font-semibold rounded flex items-center justify-center">
+              <button className="flex flex-col items-center justify-center">
+                <ImArrowUp className="text-5xl" />
+                <span>arrow</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

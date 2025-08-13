@@ -60,7 +60,7 @@ function Lab() {
     <div
       className={`flex ${
         size === "desktop"
-          ? "justify-around items-center h-[60px] bg-gray-300"
+          ? "justify-around items-center h-[60px] bg-gray-200"
           : "justify-around h-10 bg-slate-100"
       }`}
     >
@@ -95,18 +95,20 @@ function Lab() {
             <div className="border-t-[1px] border-stone-600 h-20 animate-fadeIn flex items-center">
               {currentComponent}
             </div>
-            <div className="border-t-[1px] border-blue-300">{renderButtons("mobile")}</div>
+            <div className="border-t-[1px] border-blue-300">
+              {renderButtons("mobile")}
+            </div>
           </div>
         </div>
 
         {/* Desktop Toolbar */}
-        <div className="hidden sm:flex flex-col w-[28%] md:w-[25%] lg:w-[20%] bg-gray-300">
+        <div className="hidden sm:flex flex-col w-[28%] md:w-[24%] lg:w-[20%] bg-gray-200 border-l-[1px] border-neutral-500">
           {/* Tool Preview */}
-          <div className="bg-red-500 h-[calc(100vh-140px)] animate-fadeIn flex items-center justify-center">
+          <div className=" h-full animate-fadeIn flex items-center justify-center w-full">
             {currentComponent}
           </div>
           {/* Toolbar */}
-          {renderButtons("desktop")}
+          <div className="border-t-[1px] bg-gray-200 border-blue-300">{renderButtons("desktop")}</div>
         </div>
       </main>
     </div>
