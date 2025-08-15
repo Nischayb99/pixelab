@@ -2,10 +2,9 @@ import { BiUndo } from "react-icons/bi";
 import { FaSearchPlus } from "react-icons/fa";
 import { GrGrid } from "react-icons/gr";
 import { IoCopySharp } from "react-icons/io5";
-import { MdShare } from "react-icons/md";
 import { ImQuotesRight } from "react-icons/im";
 import TreeDots from "../navButtons/ThreeBots";
-import AddButton from "../navButtons/addButton";
+import AddButton from "../navButtons/AddButton";
 import SaveButton from "../navButtons/SaveButton";
 import ShareButton from "../navButtons/ShareButton";
 function Navbar() {
