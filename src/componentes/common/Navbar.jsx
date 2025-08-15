@@ -2,34 +2,27 @@ import { BiUndo } from "react-icons/bi";
 import { FaSearchPlus } from "react-icons/fa";
 import { GrGrid } from "react-icons/gr";
 import { IoCopySharp } from "react-icons/io5";
-import { IoMdAdd } from "react-icons/io";
-import { IoSaveSharp } from "react-icons/io5";
 import { MdShare } from "react-icons/md";
 import { ImQuotesRight } from "react-icons/im";
-import { BsThreeDotsVertical } from "react-icons/bs";
+import TreeDots from "../navButtons/ThreeBots";
+import AddButton from "../navButtons/addButton";
+import SaveButton from "../navButtons/SaveButton";
+import ShareButton from "../navButtons/ShareButton";
 function Navbar() {
   return (
     <nav className="bg-[#3575df] text-white sticky top-0 z-50  ">
       {/* Mobile Layout - 2 Lines */}
-      <div className="sm:hidden h-[100px] flex flex-col justify-center">
+      <div className="sm:hidden h-[100px] flex flex-col justify-center pt-2">
         {/* First Row - Top Icons (Add, Save, Share, Quote, ThreeDot) */}
         <div className="flex justify-center items-center pb-2 ">
           <div className="flex items-center justify-around space-x-2 max-[640px]:w-full">
-            <button className="text-xl p-2 rounded-md hover:bg-[#2961c9] transition-all duration-200 hover:scale-105">
-              <IoMdAdd />
-            </button>
-            <button className="text-xl p-2 rounded-md hover:bg-[#2961c9] transition-all duration-200 hover:scale-105">
-              <IoSaveSharp />
-            </button>
-            <button className="text-xl p-2 rounded-md hover:bg-[#2961c9] transition-all duration-200 hover:scale-105">
-              <MdShare />
-            </button>
+            <AddButton />
+            <SaveButton />
+            <ShareButton />
             <button className="text-xl p-2 rounded-md hover:bg-[#2961c9] transition-all duration-200 hover:scale-105">
               <ImQuotesRight />
             </button>
-            <button className="text-xl p-2 rounded-md hover:bg-[#2961c9] transition-all duration-200 hover:scale-105">
-              <BsThreeDotsVertical />
-            </button>
+            <TreeDots />
           </div>
         </div>
 
@@ -79,21 +72,13 @@ function Navbar() {
           <button className="text-xl p-2 rounded-md hover:bg-[#2961c9] transition-all duration-200 hover:scale-105">
             <IoCopySharp />
           </button>
-          <button className="text-xl md:text-2xl p-2 rounded-md hover:bg-[#2961c9] transition-all duration-200 hover:scale-105">
-            <IoMdAdd />
-          </button>
-          <button className="text-xl md:text-2xl p-2 rounded-md hover:bg-[#2961c9] transition-all duration-200 hover:scale-105">
-            <IoSaveSharp />
-          </button>
-          <button className="text-xl md:text-2xl p-2 rounded-md hover:bg-[#2961c9] transition-all duration-200 hover:scale-105">
-            <MdShare />
-          </button>
+          <AddButton />
+          <SaveButton />
+          <ShareButton />
           <button className="text-xl md:text-2xl p-2 rounded-md hover:bg-[#2961c9] transition-all duration-200 hover:scale-105">
             <ImQuotesRight />
           </button>
-          <button className="text-xl md:text-2xl p-2 rounded-md hover:bg-[#2961c9] transition-all duration-200 hover:scale-105">
-            <BsThreeDotsVertical />
-          </button>
+          <TreeDots />
         </div>
       </div>
     </nav>
